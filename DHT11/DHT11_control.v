@@ -183,7 +183,9 @@ module start_signal (
     assign tem_dec  = tem_dec_reg;
     assign checksum = checksum_reg;
 
-    localparam IDLE = 4'b0000, START_L = 4'b0001, START_H = 4'b0010, WAIT_H = 4'b0011, WAIT_L = 4'b0100, READ_LOW = 4'b0101, READ_HIGH = 4'b0110, DATA_DIST = 4'b0111;
+    localparam IDLE = 4'b0000, START_L = 4'b0001, START_H = 4'b0010,
+    WAIT_H = 4'b0011, WAIT_L = 4'b0100, READ_LOW = 4'b0101,
+    READ_HIGH = 4'b0110, DATA_DIST = 4'b0111;
 
     assign signal = signal_reg;
     assign mode   = mode_reg;
